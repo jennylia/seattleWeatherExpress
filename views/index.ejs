@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>Node Express web application</title>
-    <meta name="description" content="" />
+    <meta name="description" content=""/>
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/gradients.css" rel="stylesheet">
 </head>
 
 <body class="">
-    <div class="wrapper">
-        <div class="graphics">
-            <div class="tower">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<div class="wrapper">
+    <div class="graphics">
+        <div class="tower">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="-11 170 1000 429" enable-background="new -11 170 1000 429" xml:space="preserve">
                     <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M989,595H712v-35c0,0,4.5-1.8,8-3
                                                                                                   c5.2-1.8,12.5,5.3,22-4c3.4-3.4-0.9-7.8-0.4-10.1c0.7-3.1,4.4-6.8,1.6-11.4c-2.6-4.2-6.9-3.6-8.2-5.5c-1.7-2.3-2.2-6.3-7-9
@@ -41,34 +41,32 @@
                                                                                                   c-5-0.1-5.5,8.6-18.8,6.6c-12.3-1.9-12.3-9.1-16.4-12.3C229.7,411.3,215.8,413.6,215.8,398.8z"/>
                 </svg>
 
-            </div>
-        </div>
-
-        <header>
-            <nav class="website-nav">
-                <ul>
-                    <li><a class="home-link" href="https://aws.amazon.com/">Home</a></li>
-                    <li><a href="https://aws.amazon.com/what-is-cloud-computing/">About</a></li>
-                    <li><a href="https://aws.amazon.com/solutions/">Services</a></li>
-                    <li><a href="https://aws.amazon.com/contact-us/">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="message">
-            <a class="twitter-link" href="http://twitter.com/home/?status=I%20created%20a%20project%20with%20AWS%20CodeStar!%20%23AWS%20%23AWSCodeStar%20https%3A%2F%2Faws.amazon.com%2Fcodestar"><img src="img/tweet.svg" /></a>
-            <div class="text">
-                <h1>Congratulations!</h1>
-                <h2>You just created a Node Express web application!</h2>
-            </div>
         </div>
     </div>
 
-    <footer>
-        <p class="footer-contents">Designed and developed with <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a> in Seattle.</p>
-    </footer>
 
-    <script src="js/set-background.js"></script>
+    <div class="message">
+        <a class="twitter-link"
+           href="http://twitter.com/home/?status=I%20created%20a%20project%20with%20AWS%20CodeStar!%20%23AWS%20%23AWSCodeStar%20https%3A%2F%2Faws.amazon.com%2Fcodestar"><img
+                src="img/tweet.svg"/></a>
+        <div class="text">
+            <h1>Seattle Weather</h1>
+            <% if(weather !== null){ %>
+            <p><%= weather %></p>
+            <% } %>
+            <% if(error !== null){ %>
+            <p><%= error %></p>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p class="footer-contents">Designed and developed with <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a>
+        in Seattle.</p>
+</footer>
+
+<script src="js/set-background.js"></script>
 </body>
 
 </html>

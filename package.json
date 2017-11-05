@@ -3,7 +3,13 @@
     "description": "Hello World Node Express web application",
     "version": "0.0.1",
     "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
     "dependencies": {
-        "express": "latest"
+        "body-parser": "^1.17.2",
+        "ejs": "^2.5.7",
+        "express": "latest",
+        "request": "^2.81.0"
     }
 }
